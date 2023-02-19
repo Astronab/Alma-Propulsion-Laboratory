@@ -67,21 +67,21 @@
 
     <h2>Lectures:</h2>
     <ul>
-      <li><a href="lectures/Plasma_physics_4_electric_propulsion.pdf" onclick="checkPassword('123')">Introduction to Electric Propulsion</a></li>
-      <li><a href="teaching_material.pdf">Fundamentals of Plasma Physics</a></li>
-      <li><a href="teaching_material.pdf">Theory of Global Models</a></li>
+      <li><a onclick="checkPassword(event, 'APL23')" href="lectures/Plasma_physics_4_electric_propulsion.pdf">Introduction to Electric Propulsion</a></li>
+      <li><a href="teaching_material.pdf" onclick="checkPassword(event, 'APL23')">Fundamentals of Plasma Physics</a></li>
+      <li><a href="teaching_material.pdf" onclick="checkPassword(event, 'APL23')">Theory of Global Models</a></li>
       <!-- Add more teaching material as needed -->
     </ul>
 
     <h2>Teaching material and codes:</h2>
     <ul>
       <li>
-        <h2><a href="https://github.com/Astronab/plasmaFoam" onclick="checkPassword('abc')">plasmaFoam</a></h2>
+        <h2><a href="https://github.com/Astronab/plasmaFoam" onclick="checkPassword(event, 'APL23')">plasmaFoam</a></h2>
         <p>Macroscopic transport of plasma and neutral gas based on the general multi-fluid approach. Targeted at the simulation of cathode-less plasma thrusters (e.g., Helicon Plasma Thruster).</p>
         <img src="https://site.unibo.it/apl/it/ricerca/helicon-plasma-thusters/@@eod.tiles.richtext/fe92b63a99464efca963dae1065a010a/@@images/c1f278ea-e2f1-484b-aa25-086e7e40bda0.jpeg" alt="Screenshot of repo 1">
       </li>
       <li>
-        <h2><a href="https://github.com/Astronab/plasma-global-model">Global Models</a></h2>
+        <h2><a href="https://github.com/Astronab/plasma-global-model" onclick="checkPassword(event, 'APL23')">Global Models</a></h2>
         <p>0D global model for RF plasma sources.</p>
         <img src="https://site.unibo.it/apl/it/ricerca/helicon-plasma-thusters/@@eod.tiles.richtext/94daa56f39e547e3bb42abe8ef2a544a/@@images/9b8dde56-5fcc-49ee-8f64-8b3f077f9c81.png" alt="Screenshot of repo 2"  width="500">
       </li>
@@ -89,12 +89,14 @@
     </ul>
 
     <script>
-        function checkPassword(password) {
+        function checkPassword(event, password) {
+          
           var enteredPassword = prompt('Enter the password:');
           if (enteredPassword === password) {
-            window.location.href = 'https://www.example.com/my-page'; // Replace with the actual link to the repository or downloadable material
+            // window.location.href = 'https://www.example.com/my-page'; // Replace with the actual link to the repository or downloadable material
           } else {
             alert('Incorrect password. Please try again.');
+            event.preventDefault();
           }
         }
         </script>
