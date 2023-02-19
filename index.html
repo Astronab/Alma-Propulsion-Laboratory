@@ -67,7 +67,7 @@
 
     <h2>Lectures:</h2>
     <ul>
-      <li><a href="teaching_material.pdf">Introduction to Electric Propulsion</a></li>
+      <li><a href="lectures/Plasma_physics_4_electric_propulsion.pdf" onclick="checkPassword('123')">Introduction to Electric Propulsion</a></li>
       <li><a href="teaching_material.pdf">Fundamentals of Plasma Physics</a></li>
       <li><a href="teaching_material.pdf">Theory of Global Models</a></li>
       <!-- Add more teaching material as needed -->
@@ -76,7 +76,7 @@
     <h2>Teaching material and codes:</h2>
     <ul>
       <li>
-        <h2><a href="https://github.com/Astronab/plasmaFoam">plasmaFoam</a></h2>
+        <h2><a href="https://github.com/Astronab/plasmaFoam" onclick="checkPassword('abc')">plasmaFoam</a></h2>
         <p>Macroscopic transport of plasma and neutral gas based on the general multi-fluid approach. Targeted at the simulation of cathode-less plasma thrusters (e.g., Helicon Plasma Thruster).</p>
         <img src="https://site.unibo.it/apl/it/ricerca/helicon-plasma-thusters/@@eod.tiles.richtext/fe92b63a99464efca963dae1065a010a/@@images/c1f278ea-e2f1-484b-aa25-086e7e40bda0.jpeg" alt="Screenshot of repo 1">
       </li>
@@ -87,6 +87,17 @@
       </li>
       <!-- Add more repositories as needed -->
     </ul>
+
+    <script>
+        function checkPassword(password) {
+          var enteredPassword = prompt('Enter the password:');
+          if (enteredPassword === password) {
+            window.location.href = 'https://www.example.com/my-page'; // Replace with the actual link to the repository or downloadable material
+          } else {
+            alert('Incorrect password. Please try again.');
+          }
+        }
+        </script>
   </body>
 
   <footer>
