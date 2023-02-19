@@ -1,26 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Alma Propulsion Laboratory - University of Bologna</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Alma Propulsion Lab</title>
+    <style>
+      /* Add some styling to make the page fancy */
+      body {
+        background: linear-gradient(to bottom right, #f2f2f2, #9684ad);
+        /* background-color: #ffffff; */
+        font-family: Arial, sans-serif;
+      }
+      footer {
+        text-align: center;
+      }
+
+      h1 {
+        color: #b60000b0;
+        text-align: center;
+        font-size: 36px;
+      }
+      h2 {
+        color: #000000b0;
+        text-align: center;
+        font-size: 24px;
+      }
+      img logo {
+        display: block;
+        margin: 0 auto;
+        width: 1000px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 200;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      li {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: center;
+        min-width: 250px;
+      }
+      li h2 {
+        color: #0077b6;
+        font-size: 24px;
+      }
+      li p {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+      
+    </style>
   </head>
   <body>
-    <!-- Navigation bar -->
-    <nav>
-      <a href="index.html"><img src="APL.png" alt="APL Logo" /></a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contacts.html">Contacts</a></li>
-      </ul>
-    </nav>
-    <!-- Home page content -->
-    <main class="home">
-      <h1>Welcome to APL repository website: WEBSITE UNDER CONSTRUCTION</h1>
-      <p>Stay tuned!</p>
-      <img src="home-img.jpg" alt="APL Home Image" />
-    </main>
+    <img logo src="APL.png" alt="Alma Propulsion Lab Logo">
+    <h1>Welcome to Alma Propulsion Lab Repository</h1>
+
+    <h2>Lectures:</h2>
+    <ul>
+      <li><a href="teaching_material.pdf">Introduction to Electric Propulsion</a></li>
+      <li><a href="teaching_material.pdf">Fundamentals of Plasma Physics</a></li>
+      <li><a href="teaching_material.pdf">Theory of Global Models</a></li>
+      <!-- Add more teaching material as needed -->
+    </ul>
+
+    <h2>Teaching material and codes:</h2>
+    <ul>
+      <li>
+        <h2><a href="https://github.com/Astronab/plasmaFoam">plasmaFoam</a></h2>
+        <p>Macroscopic transport of plasma and neutral gas based on the general multi-fluid approach. Targeted at the simulation of cathode-less plasma thrusters (e.g., Helicon Plasma Thruster).</p>
+        <img src="https://site.unibo.it/apl/it/ricerca/helicon-plasma-thusters/@@eod.tiles.richtext/fe92b63a99464efca963dae1065a010a/@@images/c1f278ea-e2f1-484b-aa25-086e7e40bda0.jpeg" alt="Screenshot of repo 1">
+      </li>
+      <li>
+        <h2><a href="https://github.com/Astronab/plasma-global-model">Global Models</a></h2>
+        <p>0D global model for RF plasma sources.</p>
+        <img src="https://site.unibo.it/apl/it/ricerca/helicon-plasma-thusters/@@eod.tiles.richtext/94daa56f39e547e3bb42abe8ef2a544a/@@images/9b8dde56-5fcc-49ee-8f64-8b3f077f9c81.png" alt="Screenshot of repo 2"  width="500">
+      </li>
+      <!-- Add more repositories as needed -->
+    </ul>
   </body>
+
+  <footer>
+    <p>&copy; 2023 Alma Propulsion Lab. All rights reserved. Unauthorized use or reproduction of this material is strictly prohibited. For further information, drop us a <a href="mailto:nabil.souhair2@unibo.it">mail</a>!</p>
+  </footer>
+  
 </html>
